@@ -1,0 +1,174 @@
+<html>
+    <head>
+        <title>
+            lathyrus
+        </title>
+        <style>
+            body{
+                background-image: url("https://image.shutterstock.com/z/stock-photo-grass-pea-lathyrus-sativus-dried-seed-useful-as-a-background-541259554.jpg");
+                background-size: cover;
+                opacity: auto;
+            }
+    #lathyrustable{
+        width:90vw;
+        margin:auto;
+        height:90vh;
+    }
+            
+            table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #D6EEEE; 
+}
+tr:nth-of-type(even) { 
+  background-color: seashell; 
+}
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: 900; 
+  font-family: -webkit-pictograph;
+
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+  font-family: sans-serif;
+  font-weight: 500;
+}
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	
+}
+#lathyrushead{
+   
+    font-family: algerian;
+                        
+                            text-align: center;
+                            background-color: greenyellow;
+                            width: 92%;                        border-radius: 4px;
+                            color: white;
+                            font-size: xxx-large;
+                          margin:auto;
+                            border: 4px solid white ;                   letter-spacing: 4px;
+                            word-spacing: 2px;
+                            animation-name: headinganim;
+                            animation-duration:14s;
+                            padding-bottom: 3px;
+                            margin-bottom: 4px;
+                    
+        }
+        @keyframes headinganim{
+    
+             20% {background-color: blue;}
+             40%{background-color: green;}
+             60%{background-color:rgb(255, 255, 0) ;}
+             80%{background-color:orange ;}
+             100%{background-color:red ;}
+             
+        }
+      </style>
+    </head>
+    <body>
+        <h4 id="lathyrushead"><strong>Lathyrus</strong></h4>
+    <div id="lathyrustable">
+    <table border="3">
+    <tbody>
+    <tr>
+    <td><strong>S.<br />
+    No.</strong></td>
+    <td><strong>Name of variety</strong></td>
+    <td><strong>Centre responsible for developing</strong></td>
+    <td><strong>Pedigree</strong></td>
+    <td><strong>Year of release</strong></td>
+    <td><strong>Average yield q/ha</strong></td>
+    <td><strong>Days to maturity</strong></td>
+    <td><strong>Tolerance to moisture stress</strong></td>
+    <td><strong>Area of adaptation</strong></td>
+    <td><strong>Any other relevant information</strong></td>
+    </tr>
+    <tr>
+    <td>1.</td>
+    <td>Bio L 212 Ratan</td>
+    <td>IARI, New Delhi</td>
+    <td>Somaclone of P 24</td>
+    <td>1997</td>
+    <td>15.3</td>
+    <td>108-116</td>
+    <td>Tol. to stress</td>
+    <td>NEPZ</td>
+    <td>Low ODAP large seed Blue flower</td>
+    </tr>
+    <tr>
+    <td>2.</td>
+    <td>Prateek</td>
+    <td>IGKV, Raipur</td>
+    <td>LS 8246 x a-60</td>
+    <td>2006</td>
+    <td>15.6</td>
+    <td>110-115</td>
+    <td>Tol. to stress &amp; Powdery mildew</td>
+    <td>Chattisgarh</td>
+    <td>Low ODAP (0.109%)</td>
+    </tr>
+    <tr>
+    <td>3.</td>
+    <td>Mahateora</td>
+    <td>IGKV, Raipur</td>
+    <td>Rattan x JRL-2</td>
+    <td>2008</td>
+    <td>15.5</td>
+    <td>110-115</td>
+    <td>Tol. to stress</td>
+    <td>Chattisgarh</td>
+    <td>Low ODAP (0.074 % ) large seed</td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,210 @@
+<html>
+    <head>
+        <title>
+            Rajmash
+        </title>
+        <style>
+            body{
+                background-image: url("https://thumbs.dreamstime.com/b/red-color-raw-whole-rajma-kidney-beans-raw-rajma-kidney-beans-170395559.jpg");
+                background-size: cover;
+                opacity: auto;
+            }
+    #rajmashtable{
+        width:90vw;
+        margin:auto;
+        height:90vh;
+    }
+            
+            table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background-color:lightblue; 
+}
+tr:nth-of-type(even) { 
+  background-color:white; 
+}
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: 900; 
+  font-family: -webkit-pictograph;
+
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+  font-family: sans-serif;
+  font-weight: 500;
+}
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	
+}
+#rajmashhead{
+   
+    font-family: algerian;
+                        
+                            text-align: center;
+                            background-color: pink;
+                            width: 92%;                        border-radius: 4px;
+                            color: white;
+                            font-size: xxx-large;
+                          margin:auto;
+                            border: 4px solid white ;                   letter-spacing: 4px;
+                            word-spacing: 2px;
+                            animation-name: headinganim;
+                            animation-duration:14s;
+                            padding-bottom: 3px;
+                            margin-bottom: 4px;
+                    
+        }
+        @keyframes headinganim{
+    
+             20% {background-color:violet;}
+             40%{background-color: darkseagreen;}
+             60%{background-color:rgb(255, 255, 0) ;}
+             80%{background-color:orange ;}
+             100%{background-color:red ;}
+             
+        }
+      </style>
+    </head>
+    <body>
+        <h4 id="rajmashhead"><strong>Rajmash</strong></h4>
+    <div id="rajmashtable">
+    <table border="3">
+    <tbody>
+    <tr>
+    <td><strong>S.<br />
+    No.</strong></td>
+    <td><strong>Name of variety</strong></td>
+    <td><strong>Centre responsible for developing</strong></td>
+    <td><strong>Pedigree</strong></td>
+    <td><strong>Year of release</strong></td>
+    <td><strong>Average yield q/ha</strong></td>
+    <td><strong>Days to maturity</strong></td>
+    <td><strong>Reaction to major disease</strong></td>
+    <td><strong>Area of adaptation</strong></td>
+    <td><strong>Any other relevant information</strong></td>
+    </tr>
+    <tr>
+    <td>1.</td>
+    <td>PDR 14 (Uday)</td>
+    <td>IIPR, Kanpur</td>
+    <td>Sel. from EC 94453</td>
+    <td>1987</td>
+    <td>16-20</td>
+    <td>125</td>
+    <td>Tol. to BCMV</td>
+    <td>NEPZ</td>
+    <td>100 seed wt. 44 g white red variegated seeds</td>
+    </tr>
+    <tr>
+    <td>2.</td>
+    <td>HUR 15 (Malviya Rajmash  15)</td>
+    <td>BHU, Varanasi</td>
+    <td>Sel. From Kolkladhar 1989 local, Kokladhar Solan</td>
+    <td>1989</td>
+    <td>16-20</td>
+    <td>120</td>
+    <td>Mod. Susceptible to BCMV</td>
+    <td>NEPZ</td>
+    <td>Erect determinate white seeded</td>
+    </tr>
+    <tr>
+    <td>3.</td>
+    <td>HUR 137 (Malviya Rajmash-137)</td>
+    <td>BHU, Varanasi</td>
+    <td>(HUR 37 x HUR 9) x 991 HUR 37</td>
+    <td>1991</td>
+    <td>18-22</td>
+    <td>112-120</td>
+    <td>Sus. To BCMV</td>
+    <td>NEPZNEPZ</td>
+    <td>Erect semi-dwarf seeds deep pink seed</td>
+    </tr>
+    <tr>
+    <td>4.</td>
+    <td>IPR 96-4 (Amber)</td>
+    <td>IIPR, Kanpur</td>
+    <td>Sel. from ET 8447</td>
+    <td>2002</td>
+    <td>15-16</td>
+    <td>139</td>
+    <td>Res. To BCMV &amp; leaf crinckle</td>
+    <td>NEPZ</td>
+    <td>100 seed 39 g</td>
+    </tr>
+    <tr>
+    <td>5.</td>
+    <td>IPR 98-5 (Utkarsh)</td>
+    <td>IIPR, Kanpur</td>
+    <td>Selection from EC 400431</td>
+    <td>2005</td>
+    <td>17</td>
+    <td>122</td>
+    <td>Tol. To BCMV</td>
+    <td>NEPZ</td>
+    <td>Gulf red seed</td>
+    </tr>
+    <tr>
+    <td>6.</td>
+    <td>IPR 98-3-1 (Arun)</td>
+    <td>IIPR, Kanpur</td>
+    <td>Selection from EC 400418</td>
+    <td>2007</td>
+    <td>16</td>
+    <td>120</td>
+    <td>Tol. To BCMV</td>
+    <td>CZ</td>
+    <td>Gulf red seed</td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </body>
+</html>

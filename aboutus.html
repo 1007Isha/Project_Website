@@ -1,0 +1,285 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+        <title>About Us</title>
+        <!--link rel="stylesheet" href="aboutus.css"-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap" rel="stylesheet">
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    outline:none;
+    box-sizing:border-box;
+    font-family:'Baloo Da 2', serif;
+}
+header{
+    z-index:999;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 200px;
+    transition:0.5s ease;
+}
+header .brand{
+    color:#fff;
+    font-size:1.5rem;
+    font-weight:700;
+    text-transform:uppercase;
+    text-decoration:none;
+}
+header .navigation{
+    position:relative;
+}
+header .navigation .navigation-items a{
+    position:relative;
+    color:#fff;
+    font-size:1rem;
+    font-weight:500;
+    text-decoration:none;
+    margin-left:30px;
+    transition:0.3s ease;
+}
+header .navigation .navigation-items a::before{
+    content:'';
+    position:absolute;
+    background:#fff;
+    width:0;
+    height:3px;
+    bottom:0;
+    left:0;
+    transition:0.3s ease;
+}
+header .navigation .navigation-items a:hover::before{
+    width:100%;
+
+}
+section{
+    padding:100px 200px;
+}
+.home{
+    position:relative;
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    background:rgb(204, 190, 152);
+}
+.home::before{
+    z-index:777;
+    content:'';
+    position:absolute;
+    background: rgb(217, 228, 171);
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+.home .content{
+    z-index:888;
+    color:#fff;
+    width:70%;
+    margin-top:50px;
+    display:none;
+}
+.home .content.active{
+    display:block;
+
+}
+.home .content h1{
+    font-size:4rem;
+    font-weight:900;
+    text-transform:uppercase;
+    letter-spacing:5px;
+    line-height:75px;
+    margin-bottom:40px;
+}
+/*.home .content h1 span{
+    font-size:1.2em;
+    font-weight:600;
+}*/
+.home .content p{
+    margin-bottom:65px;
+    font-size:1.5rem;
+}
+/*.home .media-icons{
+    z-index:888;
+    position:absolute;
+    right:30px;
+    display:flex;
+    flex-direction:column;
+    transition:0.5s ease;
+}
+.home .media-icons a{
+    color:#fff;
+    font-size:1.6em;
+    transition:0.3s ease;
+    margin-bottom:20px;
+}
+.home .media-icons a:not(:last-child){
+    margin-bottom:20px;
+}
+.home .media-icons a:hover{
+    transform:scale(1.3);
+}*/
+.home video{
+    z-index:777;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    color:rgb(109, 121, 88);
+}
+.slider-navigation{
+    z-index:888;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transform:translateY(80px);
+    margin-bottom:12px;
+}
+.slider-navigation .nav-btn{
+    width:12px;
+    height:12px;
+    background:#fff;
+    border-radius:50%;
+    cursor:pointer;
+    box-shadow: 0 0 2px rgba(255,255,255,0.5);
+    transition:0.3s ease;
+    margin-right:20px;
+
+}
+.slider-navigation .nav-btn.active{
+    background:rgb(197, 185, 79)
+}
+.slider-navigation .nav-btn:hover{
+    transform:scale(1.2);
+}
+.video-slide{
+    position:absolute;
+    width:100%;
+    clip-path: circle(0% at 0 50%);
+}
+.video-slide.active{
+    clip-path: circle(150% at 0 50%);
+    transition:2s ease;
+    transition-property: clip-path;
+}
+
+
+@media (max-width:1040px){
+    header{
+        
+        padding: 12px 20px;
+       
+    }
+    section {
+        padding: 100px 20px;
+    }
+    .home .media-icons {   
+        right: 15px;
+       
+    }
+    header .navigation {
+        position: relative;
+        display: none;
+    }
+}
+    </style>
+    </head>
+    <body>
+
+        <header>
+            <a href="#" class="brand">Flea Fair</a>
+            <div class="navigation">
+                <div class="navigation-items">
+                    <a href="website.htm">Home</a>
+                    <a href="aboutus.html">About us</a>
+                    <a href="agricoop.htm">Agricoop</a>
+                    <a href="#">Contact</a>
+                    <a href="login1.html">Log in</a>
+                </div>
+            </div>
+        </header>
+        <section class="home">
+            <video class="video-slide active" src="C:\Users\Shreya\OneDrive\Desktop\HTML\project\videos\6.mp4" autoplay muted loop></video>
+            <video class="video-slide" src="C:\Users\Shreya\OneDrive\Desktop\HTML\project\videos\2.mp4" autoplay muted loop></video>
+            <video class="video-slide" src="C:\Users\Shreya\OneDrive\Desktop\HTML\project\videos\3.mp4" autoplay muted loop></video>
+            <div class="content active">
+                <h1>Who We Are</h1>
+                <p>The Farmers' Market exists to generate fresh, wholesome connections, beginning with the one between the farmer and the market. 
+                    We start by creating a market space so these networks can grow to become a essential part of the community. 
+                    Our mission here at the Farmers Market is to cultivate this tradition by maintaining convenience, accessibility and diversity for farmers who expect it to be there. 
+                    It’s also part of our mission to preserve a sense of place that’s distinctly flavored with the essence of the local communities we serve.</p>    
+            </div>
+            <div class="content">
+                <h1>Our Purpose</h1>
+                <p>Markets are unpredictable and can greatly impact the farmers
+                    when times get tough.Advocating or raising awareness about farmers'
+                    condition can help strengthen a community.We take pride in providing the community with electronic connectivity to the wholesale markets of the country in a comfortably accessible, user-friendly environment. 
+                    The objective is to collect, analyse and disseminate market information to the farmers, traders, Policy makers and other stakeholders.</p>    
+            </div>
+            <div class="content">
+                <h1>Future Plans</h1>
+                <p>In future we aim to improve our quality of service by providing reasonable mandi prices of not only specific crops but also 
+					majority of crops available in the market according to the preference of the farmers and the dealers.Everyday, you’ll find an abundant showcase of fruits, vegetables,
+					and crops ready to take from the market. Accurate Market Information about the price and arrival etc. for the agricultural produce will be available 
+					to the farmers taking proper production and marketing decisions.</p>    
+            </div>
+            <!--div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div-->
+            <div class="slider-navigation">
+                <div class="nav-btn active"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+            </div>
+        </section>
+
+
+        
+        <script type="text/javascript">
+            //javascript for video slider navigation.
+            const btns = document.querySelectorAll(".nav-btn");
+            const slides = document.querySelectorAll(".video-slide");
+            const contents = document.querySelectorAll(".content");
+            
+
+            var sliderNav = function(manual){
+                btns.forEach((btn)=>{
+                    btn.classList.remove("active");
+                });
+
+                slides.forEach((slide)=>{
+                    slide.classList.remove("active");
+                });
+
+                contents.forEach((content)=>{
+                    content.classList.remove("active");
+                });
+
+                btns[manual].classList.add("active");
+                slides[manual].classList.add("active");
+                contents[manual].classList.add("active");
+            }
+
+            btns.forEach((btn,i)=>{
+                btn.addEventListener("click",()=>{
+                    sliderNav(i);
+                })
+            })
+        </script>
+    </body>
+</html>

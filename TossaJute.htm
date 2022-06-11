@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Tossa Jute</title>
+    <style>
+        body{
+            background-image: url("https://media.istockphoto.com/photos/close-up-burlap-sackcloth-fabric-texture-on-white-background-picture-id913265256");
+            background-size: cover;
+            opacity: auto;
+        }
+#tossatable{
+    width:90vw;
+    margin:auto;
+    height:90vh;
+}
+        
+        table { 
+width: 100%; 
+border-collapse: collapse; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+background-color:lightyellow; 
+}
+tr:nth-of-type(even) { 
+background-color:whitesmoke; 
+}
+th { 
+background: #333; 
+color: white; 
+font-weight: 900; 
+font-family: -webkit-pictograph;
+
+}
+td, th { 
+padding: 6px; 
+border: 1px solid #ccc; 
+text-align: left; 
+font-family: sans-serif;
+font-weight: 500;
+text-align:center;
+}
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+/* Force table to not be like tables anymore */
+table, thead, tbody, th, td, tr { 
+    display: block; 
+}
+
+/* Hide table headers (but not display: none;, for accessibility) */
+thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+tr { border: 1px solid #ccc; }
+
+td { 
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee; 
+    position: relative;
+    padding-left: 50%; 
+}
+
+td:before { 
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+}
+
+
+}
+#tossahead{
+
+font-family: algerian;
+                    
+                        text-align: center;
+                        background-color: greenyellow;
+                        width: 92%;                        border-radius: 4px;
+                        color: white;
+                        font-size: xxx-large;
+                      margin:auto;
+                        border: 4px solid white ;                   letter-spacing: 4px;
+                        word-spacing: 2px;
+                        animation-name: headinganim;
+                        animation-duration:14s;
+                        padding-bottom: 3px;
+                        margin-bottom: 4px;
+                
+    }
+    @keyframes headinganim{
+
+         20% {background-color: blue;}
+         40%{background-color: green;}
+         60%{background-color:rgb(255, 255, 0) ;}
+         80%{background-color:orange ;}
+         100%{background-color:red ;}
+         
+    }
+  </style>
+</head>
+<body>
+    <h1 id="tossahead">Tossa Jute</h1>
+    <div id="tossatable">
+    <table   border="4">
+        <tbody>
+        <tr>
+        <th>
+        <p >Sl. No.</p>
+        </th>
+        <th>Name of Variety</th>
+        <th >Year of release</th>
+        <th >State(s) of release</th>
+        <th  >Notification No.</th>
+        <th >Yield q/ha</th>
+        <th  >Salient traits notified</th>
+        </tr>
+        <tr >
+        <td ><strong>1</strong></td>
+        <td ><strong>2</strong></td>
+        <td><strong>3</strong></td>
+        <td><strong>4</strong></td>
+        <td ><strong>5</strong></td>
+        <td><strong>6</strong></td>
+        <td ><strong>7</strong></td>
+        </tr>
+        <tr >
+        <td><strong>TOSSA JUTE (<em>Corchorus olitorius</em>)</strong></td>
+        <td ></td>
+        <td></td>
+        <td ></td>
+        <td ></td>
+        <td></td>
+        <td ></td>
+        </tr>
+        <tr >
+        <td >1</td>
+        <td >
+        <p >JRO 632 (Baisakhi tossa)</p>
+        </td>
+        <td>1974</td>
+        <td>W.B.</td>
+        <td >S.O 598 (E) 08.10.1974</td>
+        <td>30-32</td>
+        <td >Suitable for late sowing, induces premature flowering if sown before mid-April, pods shattering type.</td>
+        </tr>
+        <tr >
+        <td >2</td>
+        <td >
+        <p >JRO 878 (Chaitali tossa)</p>
+        </td>
+        <td>1974</td>
+        <td>W.B.</td>
+        <td >S.O.598 (E) 08.10.1974</td>
+        <td>30-32</td>
+        <td >Suitable for early (mid March) sowing, pods non-shattering type, better fibre fineness.</td>
+        </tr>
+        <tr >
+        <td >3</td>
+        <td >
+        <p >JRO 7835 (Basudev)</p>
+        </td>
+        <td>1974</td>
+        <td>W.B.</td>
+        <td >S.O.598 (E) 08.10.1974</td>
+        <td>32-34</td>
+        <td >Pods non-shattering, suitable for early (mid March) sowing, can withstand water logging to some extent at later stage of growth.</td>
+        </tr>
+        <tr >
+        <td >4</td>
+        <td >
+        <p >JRO 524 (Navin)</p>
+        </td>
+        <td>1977</td>
+        <td>W.B.</td>
+        <td >S.O.1004(E) 23.03.1978</td>
+        <td>32-40</td>
+        <td >Pods non-shattering, sowing during middle of March does not induce premature flowering.  It is least susceptible to yellow mite pest and is resistant to root rot diseases in high rainfall areas.  It rets better than other <em>olitorius</em> varieties and extraction is easy.</td>
+        </tr>
+        <tr >
+        <td >5</td>
+        <td >
+        <p >TJ 40 (Mahadev)</p>
+        </td>
+        <td>1983</td>
+        <td>Maharashtra</td>
+        <td >
+        <p >S.O.       499 (E) 08.07.1983</p>
+        </td>
+        <td>25.00</td>
+        <td >Premature flowering resistance-absent, pod dehiscence-present ; seed colour-green</td>
+        </tr>
+        <tr >
+        <td >6</td>
+        <td >
+        <p >JRO 3690 (Savitri)</p>
+        </td>
+        <td>1985</td>
+        <td>W.B.</td>
+        <td  >S.O.         540 (E) 24.07.1985</td>
+        <td>30-33</td>
+        <td >Pods shattering type, better fibre quality, suitable for late sowing.</td>
+        </tr>
+        <tr >
+        <td >7</td>
+        <td >
+        <p >KOM 62 (Rebati)</p>
+        </td>
+        <td>1993</td>
+        <td>Odisha</td>
+        <td  >S.O.         615( E) 17.08.1993</td>
+        <td>30.40</td>
+        <td >Premature flowering resistance-absent, pod dehiscence-present ; seed colour-steel grey</td>
+        </tr>
+        <tr >
+        <td >8</td>
+        <td >
+        <p >JRO 66 (Golden jubilee tossa)</p>
+        </td>
+        <td>1997</td>
+        <td>W.B.</td>
+        <td  >S.O.          401 (E) 15.05.1998</td>
+        <td>35-40</td>
+        <td >Pods non shattering type, fibre quality TD<sub>2</sub> grade, ideal for mid April to early May sowing.</td>
+        </tr>
+        <tr >
+        <td >9</td>
+        <td >
+        <p >JRO 8432 (Shakti tossa)</p>
+        </td>
+        <td>1999</td>
+        <td>W.B.</td>
+        <td  >S.O. 1050(E) 26.08.1999</td>
+        <td>35-40</td>
+        <td >Suitable for early (mid March) sowing, premature flowering resistant, non-shattering pod.</td>
+        </tr>
+        <tr >
+        <td >10</td>
+        <td >
+        <p >JRO 128 (Surya)</p>
+        </td>
+        <td>2002</td>
+        <td>W.B.</td>
+        <td >
+        <p >S.O.       937 (E) 04.09.2002</p>
+        </td>
+        <td>32-38</td>
+        <td >Pods non shattering type, can be sown from mid March to end of April. Very good fibre quality.</td>
+        </tr>
+        <tr >
+        <td >11</td>
+        <td >
+        <p >S 19 (Subala)</p>
+        </td>
+        <td>2005</td>
+        <td>W.B.</td>
+        <td  >
+        <p >S.O.         122 (E) 02.02.2005</p>
+        </td>
+        <td>30-35</td>
+        <td >Suitable for early (mid March) sowing, resistant to premature flowering , tolerant to major pests and diseases ,  finer fibre quality with lesser lignin content.</td>
+        </tr>
+        <tr >
+        <td >12</td>
+        <td >
+        <p >JRO 204 (Suren)</p>
+        </td>
+        <td>2007</td>
+        <td>W.B.</td>
+        <td  >S.O.     1703 (E) 05.10.2007</td>
+        <td>36-38</td>
+        <td >Tall,  cylindrical stem, non-lodging type, non-shattering pod, resistance to premature flowering</td>
+        </tr>
+        <tr >
+        <td >13</td>
+        <td >
+        <p >AAUOJ 1 (Tarun)</p>
+        </td>
+        <td>2007</td>
+        <td>Assam</td>
+        <td  >S.O.       1703 (E) 05.10.2007</td>
+        <td>36</td>
+        <td >Non-shattering pod, broader leaf with green longer stipule, resistance to premature flowering, better biotic resistance for stem rot, root rot, anthracnose and yellow mite</td>
+        </tr>
+        <tr >
+        <td >14</td>
+        <td >
+        <p >JBO 2003H (Ira)</p>
+        </td>
+        <td>     2008</td>
+        <td>W.B.</td>
+        <td  >S.O.           72 (E) 10.01.2008</td>
+        <td>38</td>
+        <td >Resistance to premature flowering,  better fibre quality, better biotic resistance to stem rot, root rot, anthracnose and yellow mite</td>
+        </tr>
+        <tr >
+        <td >15</td>
+        <td >
+        <p >CO 58 (Sourav)</p>
+        </td>
+        <td>      2010</td>
+        <td>W.B.</td>
+        <td  >S.O.           211 (E) 29.01.2010</td>
+        <td>34</td>
+        <td >Suitable time of sowing is mid- March, pods are  non- shattering type, resistance to premature flowering, better fibre quality, resistance to major pest and diseases</td>
+        </tr>
+        <tr >
+        <td >16</td>
+        <td >
+        <p >JBO 1 (Sudhangshu)</p>
+        </td>
+        <td>2010</td>
+        <td>W.B.</td>
+        <td  >S.O.        2137 (E) 31.08.2010</td>
+        <td>30-35</td>
+        <td >Suitable time of sowing is  mid- March to end- April,  pods are non-shattering type, low lignin content, resistance to premature flowering, better fibre quality, resistance to major pest and diseases</td>
+        </tr>
+        <tr >
+        <td >17</td>
+        <td >
+        <p >JROM 1 (Pradip)</p>
+        </td>
+        <td>2013</td>
+        <td>W.B.</td>
+        <td  >S.O.         312 (E) 01.02.2013</td>
+        <td>37.40</td>
+        <td >Suitable time of sowing is  mid- March to end- April, Stem: Cylindrical , non-branching; Leaf colour: Green, laceolate shape; Flower:Petal colour; Yellow; Fruit: Pods green cylindrical, non-shattering</td>
+        </tr>
+        <tr >
+        <td >18</td>
+        <td >
+        <p >JROG 1 (Rithika)</p>
+        </td>
+        <td>2015</td>
+        <td>W.B.</td>
+        <td  >S.O.        1228 (E) 07.05.2015</td>
+        <td>27.93</td>
+        <td >Suitable time of sowing is  mid- March to end- April, non-shattering pod, resistance to premature flowering, resistance  to root rot and  stem rot disease , fibre quality is good, tolerance of abiotic stresses,</td>
+        </tr>
+        <tr >
+        <td >19</td>
+        <td >
+        <p >JRO 2407 (Samapti)</p>
+        </td>
+        <td>2016</td>
+        <td>W.B</td>
+        <td  >S.O.      2238 (E) 29.06.2016</td>
+        <td>33.82</td>
+        <td >Suitable time of sowing is  early March,  pods are non-shattering type, low lignin content, resistance to premature flowering, better fibre quality, resistance to major pest and diseases.</td>
+        </tr>
+        <tr >
+        <td >20</td>
+        <td >
+        <p >KRO 4 (Gouranga)</p>
+        </td>
+        <td>2017</td>
+        <td>W.B</td>
+        <td  >S.O.        1007 (E)     30.03. 2017</td>
+        <td>29.61</td>
+        <td >Adapted to tossa jute growing especially, West Bengal, Assam, Bihar and Odisha for mid-March to mid-May sowing. Tolerant to stem rot disease and insects like semilooper, apion, BHC and yellow mite.</td>
+        </tr>
+        <tr>
+        <td  >21</td>
+        <td >BCCO 6  (Kisan Pat)</td>
+        <td >2017</td>
+        <td >W.B</td>
+        <td  >S.O.       1007 (E)     30.03. 2017</td>
+        <td >28.35</td>
+        <td >
+        <p >Coppery red stem variety with better fibre tenacity (21.18 g/tex) and fineness (2.81 tex), recommended for entire tossa jute growing states for sowing in 2nd fortnight of April to May.</p>
+        </td>
+        </tr>
+        </table>
+        </div>
+     
+</body>
+</html>

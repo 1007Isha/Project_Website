@@ -1,0 +1,760 @@
+<html>
+    <head>
+        <title>Mungbean</title>
+    </head>
+    <style>
+        body{
+            background-image: url("https://previews.123rf.com/images/victorhenry/victorhenry1705/victorhenry170500520/78346383-mung-bean-background.jpg");
+            background-size: cover;
+            opacity: auto;
+        }
+#mungbeantable{
+    width:90vw;
+    margin:auto;
+    height:90vh;
+}
+        
+        table { 
+width: 100%; 
+border-collapse: collapse; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+background-color:azure; 
+}
+tr:nth-of-type(even) { 
+background-color: lightgreen; 
+}
+th { 
+background: #333; 
+color: white; 
+font-weight: 900; 
+font-family: -webkit-pictograph;
+
+}
+td, th { 
+padding: 6px; 
+border: 1px solid #ccc; 
+text-align: left; 
+font-family: sans-serif;
+font-weight: 500;
+}
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+/* Force table to not be like tables anymore */
+table, thead, tbody, th, td, tr { 
+    display: block; 
+}
+
+/* Hide table headers (but not display: none;, for accessibility) */
+thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+tr { border: 1px solid #ccc; }
+
+td { 
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee; 
+    position: relative;
+    padding-left: 50%; 
+}
+
+td:before { 
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+}
+
+
+}
+#mungbeanhead{
+
+font-family: algerian;
+                    
+                        text-align: center;
+                        background-color: cyan;
+                        width: 92%;                        border-radius: 4px;
+                        color: white;
+                        font-size: xxx-large;
+                      margin:auto;
+                        border: 4px solid white ;                   letter-spacing: 4px;
+                        word-spacing: 2px;
+                        animation-name: headinganim;
+                        animation-duration:14s;
+                        padding-bottom: 3px;
+                        margin-bottom: 4px;
+                
+    }
+    @keyframes headinganim{
+
+         20% {background-color: blue;}
+         40%{background-color: green;}
+         60%{background-color:rgb(255, 255, 0) ;}
+         80%{background-color:orange ;}
+         100%{background-color:red ;}
+         
+    }
+  </style>
+    <body>
+        <h1 id="mungbeanhead">Mungbean</h1>
+        <div id="mungbeantable">
+        <table border="3">
+    <tbody>
+    <tr>
+    <td><strong>S.<br />
+    No.</strong></td>
+    <td><strong>Name of variety</strong></td>
+    <td><strong>Centre responsible for developing</strong></td>
+    <td><strong>Pedigree</strong></td>
+    <td><strong>Year of release</strong></td>
+    <td><strong>Average yield q/ha</strong></td>
+    <td><strong>Days to maturity</strong></td>
+    <td><strong>Reaction to major disease</strong></td>
+    <td><strong>Area of adaptation</strong></td>
+    <td><strong>Any other relevant information</strong></td>
+    </tr>
+    <tr>
+    <td>1.</td>
+    <td>ML 267</td>
+    <td>PAU, Ludhiana</td>
+    <td>ML 1 x LM 987</td>
+    <td>1987</td>
+    <td>10-11</td>
+    <td>75</td>
+    <td>Res. to MYMV</td>
+    <td>NWPZ</td>
+    <td>Plant short, compact seed shining light green</td>
+    </tr>
+    <tr>
+    <td>2.</td>
+    <td>PDM 11</td>
+    <td>IIPR, Kanpur</td>
+    <td>Sel. from LM 595</td>
+    <td>1987</td>
+    <td>8.33</td>
+    <td>75</td>
+    <td>Res. to MYMV</td>
+    <td>CZ</td>
+    <td>Plant erect bushy, sed shining green large (3.2 gm/100) spring season</td>
+    </tr>
+    <tr>
+    <td>3.</td>
+    <td>PDM 54</td>
+    <td>IIPR, Kanpur</td>
+    <td>Sel. for germplasm collected from Kundawa Bahraich (UP)</td>
+    <td>1987</td>
+    <td>9.11</td>
+    <td>65</td>
+    <td>Res. to MYMV</td>
+    <td>NEPZ</td>
+    <td>Plant erect bushy seeds, shining green rectangular large (4 g/100 seed)</td>
+    </tr>
+    <tr>
+    <td>4.</td>
+    <td>Pusa 105</td>
+    <td>IARI, New Delhi</td>
+    <td>Sel. from exotic 1987 line M 178</td>
+    <td>1987</td>
+    <td>10.0</td>
+    <td>75</td>
+    <td>Tol. to MYMV PM, Macrop-homina blight</td>
+    <td>CZ</td>
+    <td>Plant tolerant seed deep green med. Large</td>
+    </tr>
+    <tr>
+    <td>5.</td>
+    <td>Vamban 1</td>
+    <td>Vamban (TN)</td>
+    <td>S-8 x PIMS 3</td>
+    <td>1989</td>
+    <td>8.0</td>
+    <td>65</td>
+    <td>Res. to MYMV</td>
+    <td>Tamilnadu</td>
+    <td>For Kharif season</td>
+    </tr>
+    <tr>
+    <td>6</td>
+    <td>RMG 62</td>
+    <td>Durgapura</td>
+    <td>R 288-8 x China mung</td>
+    <td>1991</td>
+    <td>7.0</td>
+    <td>65-70</td>
+    <td>Tol. to MYMV</td>
+    <td>Rajasthan</td>
+    <td>Tol. to drought</td>
+    </tr>
+    <tr>
+    <td>7.</td>
+    <td>ADT 3</td>
+    <td>TNAU. Adutharai</td>
+    <td>(M 70-16 x Rajendra) x G 65</td>
+    <td>1991</td>
+    <td>10.7</td>
+    <td>65-70</td>
+    <td>Tol. to MYMV &amp; PM</td>
+    <td>T.N.</td>
+    <td>For rabi season</td>
+    </tr>
+    <tr>
+    <td>8.</td>
+    <td>Co 5</td>
+    <td>TNAU, Coimbatore</td>
+    <td>KM 2 x MG 50-10</td>
+    <td>1991</td>
+    <td>9.0</td>
+    <td>70-75</td>
+    <td>Tol. to MYMV</td>
+    <td>T.N.</td>
+    <td>For Kharif season</td>
+    </tr>
+    <tr>
+    <td>9.</td>
+    <td>MUM 2</td>
+    <td>M.U. Meerut</td>
+    <td>Mutant of K 851</td>
+    <td>1992</td>
+    <td>12.0</td>
+    <td>60-70</td>
+    <td>Res. to MYMV</td>
+    <td>NWPZ</td>
+    <td>Plant early dwarf seed shining green med. large (3.2 g/100 seed)</td>
+    </tr>
+    <tr>
+    <td>10.</td>
+    <td>BM 4</td>
+    <td>ARS, Badnapur</td>
+    <td>Mutant of T 44<br />
+    1992</td>
+    <td>1992</td>
+    <td>10-12</td>
+    <td>65-70</td>
+    <td>Tol. to MYMV and PM</td>
+    <td>CS</td>
+    <td>Plant erect, bushy large green  seed</td>
+    </tr>
+    <tr>
+    <td>11.</td>
+    <td>AKM 8803</td>
+    <td>PKV, Akola</td>
+    <td>PIM  53 x MH 1</td>
+    <td>1992</td>
+    <td>10.5</td>
+    <td>65-70</td>
+    <td>Tol. to MYMV</td>
+    <td>MS</td>
+    <td>For kharif season</td>
+    </tr>
+    <tr>
+    <td>12.</td>
+    <td>Narendra Mung 1</td>
+    <td>NDUA&amp;T, Faizbad</td>
+    <td>G 65 x UPM 79-3-4</td>
+    <td>1992</td>
+    <td>10.0</td>
+    <td>60-70</td>
+    <td>Res. to MYMV</td>
+    <td>UP</td>
+    <td>Suitable to Kharif &amp; Spring<br />
+    Dull green seed</td>
+    </tr>
+    <tr>
+    <td>13.</td>
+    <td>Phule M 2</td>
+    <td>MPKVV, Rahuri</td>
+    <td>J 781 x ML</td>
+    <td>1992</td>
+    <td>6.9</td>
+    <td>65</td>
+    <td>Tol. to MYMV</td>
+    <td>MS</td>
+    <td>For kharif season</td>
+    </tr>
+    <tr>
+    <td>14.</td>
+    <td>AAU 34</td>
+    <td>AAU, Jorhat, Assam</td>
+    <td>CES 44/ML 5</td>
+    <td>1992</td>
+    <td>10.0</td>
+    <td>60-65</td>
+    <td>Tol. to MYMV</td>
+    <td>Assam</td>
+    <td>Suitable for kharif</td>
+    </tr>
+    <tr>
+    <td>15.</td>
+    <td>Asha</td>
+    <td>HAU, Hisar</td>
+    <td>K 851 x L 24-2</td>
+    <td>1193</td>
+    <td>12.0</td>
+    <td>75-80</td>
+    <td>Tol. to MYMV</td>
+    <td>Haryana</td>
+    <td>Suitable for kharif</td>
+    </tr>
+    <tr>
+    <td>16.</td>
+    <td>TARM 2</td>
+    <td>BARC/Akola</td>
+    <td>RUM 5 x TPH 1</td>
+    <td>1994</td>
+    <td>9.5</td>
+    <td>65</td>
+    <td>Tol. to PM</td>
+    <td>MS</td>
+    <td>For rabi season</td>
+    </tr>
+    <tr>
+    <td>17.</td>
+    <td>Pusa 9072</td>
+    <td>IARI</td>
+    <td>Pusa 106 x 10-215</td>
+    <td>1995</td>
+    <td>9.0</td>
+    <td>65-75</td>
+    <td>Tol. to PM</td>
+    <td>SZ (Rabi)</td>
+    <td>Suitable for rabi season</td>
+    </tr>
+    <tr>
+    <td>18.</td>
+    <td>Warangal 2 (WGG 2)</td>
+    <td>APAU, Warangal</td>
+    <td>W 75-70 x Pusa 101</td>
+    <td>1995</td>
+    <td>14.0</td>
+    <td>65-70</td>
+    <td>&#8211;</td>
+    <td>AP</td>
+    <td>Suitable for Kharif,  rabi &amp; summer</td>
+    </tr>
+    <tr>
+    <td>19.</td>
+    <td>Madhira 295</td>
+    <td>APAU, Madhira</td>
+    <td>PIMS 4 x CO 3</td>
+    <td>1995</td>
+    <td>14.0</td>
+    <td>65-70</td>
+    <td>Tol. to MYMV</td>
+    <td>AP</td>
+    <td>For kharif season</td>
+    </tr>
+    <tr>
+    <td>20.</td>
+    <td>LGG 407</td>
+    <td>APAU, Lam</td>
+    <td>Mutant of Pant M 2</td>
+    <td>1995</td>
+    <td>14.0</td>
+    <td>70-75</td>
+    <td>Tol. to MYMV &amp; PM</td>
+    <td>AP</td>
+    <td>For rabi season</td>
+    </tr>
+    <tr>
+    <td>21.</td>
+    <td>LGG 450</td>
+    <td>APAU, Lam</td>
+    <td>Mutant of Pant M 2</td>
+    <td>1995</td>
+    <td>13.0</td>
+    <td>70-75</td>
+    <td>Tol. to MYMV &amp; PM</td>
+    <td>AP</td>
+    <td>For rabi season</td>
+    </tr>
+    <tr>
+    <td>22.</td>
+    <td>Gujarat Mung 3 (Pushkara)</td>
+    <td>S.K. Nagar</td>
+    <td>&#8211;</td>
+    <td>1995</td>
+    <td>&#8211;</td>
+    <td>&#8211;</td>
+    <td>&#8211;</td>
+    <td>Gujarat</td>
+    <td>&#8211;</td>
+    </tr>
+    <tr>
+    <td>23.</td>
+    <td>JM 721 Jawahar Mung 721</td>
+    <td>JNKVV, Indore</td>
+    <td>ML 5 x PIMS 3</td>
+    <td>1995</td>
+    <td>12.4</td>
+    <td>70-75</td>
+    <td>Tol. to PM</td>
+    <td>MP</td>
+    <td>Erect plant, medium,dumbled shape, dull green seed</td>
+    </tr>
+    <tr>
+    <td>24.</td>
+    <td>ML 613</td>
+    <td>PAU, Ludhiana</td>
+    <td>ML 2993 x ML 229</td>
+    <td>1996</td>
+    <td>13.0</td>
+    <td>84</td>
+    <td>Res. to YMV BLS &amp; Pod leaf spot</td>
+    <td>Punjab</td>
+    <td>For Kharif season</td>
+    </tr>
+    <tr>
+    <td>25.</td>
+    <td>PDM 84-178</td>
+    <td>IIPR/Kathalgeri</td>
+    <td>&#8211;</td>
+    <td>1996</td>
+    <td>8.1</td>
+    <td>65-70</td>
+    <td>Tol. to MYMV &amp; PM</td>
+    <td>AP</td>
+    <td>For summer &amp; early kharif</td>
+    </tr>
+    <tr>
+    <td>26.</td>
+    <td>TARM 1</td>
+    <td>BARC/Akola</td>
+    <td>RUM 5 x TPM 1</td>
+    <td>1996</td>
+    <td>12.4<br />
+    6.7</td>
+    <td>79</td>
+    <td>Res. to PM</td>
+    <td>MS</td>
+    <td>For rabi season, shining green seed</td>
+    </tr>
+    <tr>
+    <td>27.</td>
+    <td>TARM 18</td>
+    <td>BARC/Akola</td>
+    <td>PDM 54 x TARM 2</td>
+    <td>1996</td>
+    <td>12.0</td>
+    <td>68</td>
+    <td>Res. to PM</td>
+    <td>MS</td>
+    <td>Shining green seed</td>
+    </tr>
+    <tr>
+    <td>28.</td>
+    <td>SML 134</td>
+    <td>PAU, Ludhiana</td>
+    <td>V 2164 x ML 258</td>
+    <td>1996</td>
+    <td>11.0</td>
+    <td>68</td>
+    <td>Tol. to MYMV</td>
+    <td>Punjab</td>
+    <td>Rec. for spring/summer season</td>
+    </tr>
+    <tr>
+    <td>29.</td>
+    <td>Pant Moong 4<br />
+    (UPM 92-1)</td>
+    <td>Pantnagar</td>
+    <td>T 44 x UPU 2</td>
+    <td>1997</td>
+    <td>7.1</td>
+    <td>68</td>
+    <td>Res. to MYMV</td>
+    <td>NEPZ</td>
+    <td>Suitable for kharif, dull green seed</td>
+    </tr>
+    <tr>
+    <td>30</td>
+    <td>HUM 1<br />
+    (Malviya Jyoti)</td>
+    <td>BHU, Varanasi</td>
+    <td>BHUM 1 x Pant U30</td>
+    <td>1999</td>
+    <td>9.4<br />
+    8.1</td>
+    <td>65<br />
+    60</td>
+    <td>Res. to MYMV<br />
+    Res. to MYMV</td>
+    <td>CZ &amp; SZ</td>
+    <td>For kharif season, shining green seed</td>
+    </tr>
+    <tr>
+    <td>31</td>
+    <td>RMG 268</td>
+    <td>RAU,Durgapura</td>
+    <td>R 288-8 x J 781</td>
+    <td>1997</td>
+    <td>8..9</td>
+    <td>60</td>
+    <td>Tol. to CLS</td>
+    <td>Rajasthan</td>
+    <td>For kharif &amp; Summer season</td>
+    </tr>
+    <tr>
+    <td>32.</td>
+    <td>CO 6</td>
+    <td>TNAU, Coimbatore</td>
+    <td>WGG 37 x CO 5</td>
+    <td>1999</td>
+    <td>10.0</td>
+    <td>65</td>
+    <td>Res. to MYMV</td>
+    <td> TN</td>
+    <td>All season</td>
+    </tr>
+    <tr>
+    <td>33.</td>
+    <td>Pusa 9531</td>
+    <td>IARI, New Delhi</td>
+    <td>Sel. From NM 9473</td>
+    <td>2000</td>
+    <td>9.0</td>
+    <td>60</td>
+    <td>Res. to MYMV</td>
+    <td>CZ</td>
+    <td>For summer season</td>
+    </tr>
+    <tr>
+    <td>34.</td>
+    <td>Pusa Vishal</td>
+    <td>IARI, New Delhi</td>
+    <td>Sel. From NM 92</td>
+    <td>2000</td>
+    <td>11.0</td>
+    <td>62</td>
+    <td>Res. to MYMV</td>
+    <td>NWPZ</td>
+    <td>Summer, very large seed (6 g/100 seed)</td>
+    </tr>
+    <tr>
+    <td>35.</td>
+    <td>Ganga 8</td>
+    <td>ARS, Sriganganagar</td>
+    <td>K 851 x Pusa  105</td>
+    <td>2001</td>
+    <td>9.2</td>
+    <td>72</td>
+    <td>Mod. Res. to MYMV, CLS etc.</td>
+    <td>NWPZ</td>
+    <td>For kharif season</td>
+    </tr>
+    <tr>
+    <td>36.</td>
+    <td>OUM 11-5</td>
+    <td>OUAT, Berhampur (O)</td>
+    <td>Mutant of Dhauli</td>
+    <td>2002</td>
+    <td>7.3</td>
+    <td>62</td>
+    <td>Mod. Res. PM, MYMV, CLS</td>
+    <td>SZ</td>
+    <td>For kharif season</td>
+    </tr>
+    <tr>
+    <td>37.</td>
+    <td>HUM 2<br />
+    (Malaviya Jagriti</td>
+    <td>BHU, Varanasi</td>
+    <td>Sel. from local germplasm No. TVCM-3</td>
+    <td>2000</td>
+    <td>10.5</td>
+    <td>67</td>
+    <td>Mod. Rest. to MYMV</td>
+    <td>U.P. &amp; Utaranchal</td>
+    <td>For spring/ Summer season</td>
+    </tr>
+    <tr>
+    <td>37.</td>
+    <td>HUM 6<br />
+    (Malaviya Janpriya)</td>
+    <td>BHU, Varanasi</td>
+    <td>Sel. from local germplasm No. BHUM 54</td>
+    <td>2001</td>
+    <td>10.0</td>
+    <td>68</td>
+    <td>Mod. Rest. to MYMV</td>
+    <td>UP</td>
+    <td>For the spring season</td>
+    </tr>
+    <tr>
+    <td>38.</td>
+    <td>HUM 12<br />
+    (Malaviya Janchetna)</td>
+    <td>BHU, Varanasi</td>
+    <td>HUM 5 x DPM 90-1</td>
+    <td>2003</td>
+    <td>11.2</td>
+    <td>60-62</td>
+    <td>Mod. Res. MYMV, CLS</td>
+    <td>NEPZ</td>
+    <td>For summer season</td>
+    </tr>
+    <tr>
+    <td>39.</td>
+    <td>SML 668</td>
+    <td>PAU,Ludhiana</td>
+    <td>Sel. From NM 94</td>
+    <td>2002</td>
+    <td>11.3</td>
+    <td>60</td>
+    <td>Tol. to MYMV</td>
+    <td>Punjab</td>
+    <td>For spring / Summer  season</td>
+    </tr>
+    <tr>
+    <td>40.</td>
+    <td>Meha         (IPM 99-125)</td>
+    <td>IIPR, Kanpur</td>
+    <td>PM 3 x APM 36</td>
+    <td>2004</td>
+    <td>9.8</td>
+    <td>66</td>
+    <td>Res. to MYMV</td>
+    <td>NEPZ</td>
+    <td>For spring season</td>
+    </tr>
+    <tr>
+    <td>41.</td>
+    <td>TM B 37</td>
+    <td>BARC, Mumbai</td>
+    <td>Kopergaon x TARM 2</td>
+    <td>2005</td>
+    <td>11.0</td>
+    <td>65</td>
+    <td>Mod. Res. to YMV</td>
+    <td>NEPZ</td>
+    <td>For summer Season</td>
+    </tr>
+    <tr>
+    <td>42.</td>
+    <td>COGG 912</td>
+    <td>TNAU, Coimbatore</td>
+    <td>MGG 336 x COGG 902</td>
+    <td>2005</td>
+    <td>8.0</td>
+    <td>62</td>
+    <td>Res. to MYMV, CLS</td>
+    <td>SZ</td>
+    <td>For kharif season</td>
+    </tr>
+    <tr>
+    <td>43.</td>
+    <td>HUM 16<br />
+    (Malaviya Jankalyani</td>
+    <td>BHU, Varanasi</td>
+    <td>Pusa bold-1 x HUM 8</td>
+    <td>2006</td>
+    <td>10.9</td>
+    <td>55-58</td>
+    <td>Res. to MYMV</td>
+    <td>NEPZ</td>
+    <td>For summer season</td>
+    </tr>
+    <tr>
+    <td>44.</td>
+    <td>MH 2-15 (Sattaya)</td>
+    <td>Hisar</td>
+    <td>PDM 116 x Gujrat -1</td>
+    <td>2007</td>
+    <td>10.55</td>
+    <td>67</td>
+    <td>Res. to MYMV and CLS</td>
+    <td>NWPZ</td>
+    <td>For kharif season</td>
+    </tr>
+    <tr>
+    <td>45.</td>
+    <td>Pant Mung-6</td>
+    <td>GBPUA&amp;T, Pantanagar</td>
+    <td>Pant M 2 x AMP 36</td>
+    <td>2007</td>
+    <td>10.52</td>
+    <td>96</td>
+    <td>Res. to MYMV CLS, BLS and Leaf Crinckle.</td>
+    <td>NHZ</td>
+    <td>For kharif season</td>
+    </tr>
+    <tr>
+    <td>46.</td>
+    <td>KM  2241</td>
+    <td>CSAU, Kanpur</td>
+    <td>Samrat x PDM 54</td>
+    <td>2008</td>
+    <td>10-11</td>
+    <td>65-70</td>
+    <td>Res. to MYMV</td>
+    <td>NHZ</td>
+    <td>For kharif season</td>
+    </tr>
+    <tr>
+    <td>47.</td>
+    <td>IPM 02-3</td>
+    <td>IIPR,  Kanpur</td>
+    <td>IPM99-125xPusa bold2</td>
+    <td>2009</td>
+    <td>11.0</td>
+    <td>62-68</td>
+    <td>Res. to MYMV</td>
+    <td>NWPZ</td>
+    <td>Large seeded ,Kharif7spring season</td>
+    </tr>
+    <tr>
+    <td>48.</td>
+    <td>PKV AKM 4</td>
+    <td>PKV, Akola</td>
+    <td>BM4XPS16</td>
+    <td>2009</td>
+    <td>10.0</td>
+    <td>62-66</td>
+    <td>Res. to MYMV</td>
+    <td>CZ &amp; SZ</td>
+    <td>For Kharif season</td>
+    </tr>
+    <tr>
+    <td>49.</td>
+    <td>Pusa 0672</td>
+    <td>IARI, New Delhi</td>
+    <td>11/395 x ML 267</td>
+    <td>2009</td>
+    <td>10.0</td>
+    <td>64</td>
+    <td>Res. to MYMV</td>
+    <td>NHZ</td>
+    <td>For Kharif season</td>
+    </tr>
+    <tr>
+    <td>50.</td>
+    <td>IPM 02-14</td>
+    <td>IIPR,  Kanpur</td>
+    <td>IPM99-125xPusa bold2</td>
+    <td>2010</td>
+    <td>11.0</td>
+    <td>60-65</td>
+    <td>Res. to MYMV</td>
+    <td>SZ</td>
+    <td>For Spring/Summer season</td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </body>
+</html>
